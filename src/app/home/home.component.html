@@ -1,0 +1,10 @@
+<h3>Select State from DropDown</h3>
+<select class="form-select" aria-label="Default select example" #input (change)='stateHandler(input.value)' [(ngModel)]="selectedState">
+  <option selected>{{selectedState}}</option>
+  <option *ngFor="let item of states">{{item}}</option>
+</select>
+
+<div *ngIf="stateTrue" class="container">
+  <app-state [selectedState]='selectedState' [selectedStateData]='selectedStateData'></app-state>
+  <button (click)="resetHandler()" class="btn btn-success">Reset</button>
+</div>

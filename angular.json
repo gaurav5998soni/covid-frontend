@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularSpring"
+    }
+  },
+  "defaultProject": "AngularSpring",
+  "cli": {
+    "analytics": false
+  }
 }

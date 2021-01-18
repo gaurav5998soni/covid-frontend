@@ -1,0 +1,21 @@
+<h3>State Name: {{selectedState}}</h3>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Confirmed</th>
+        <th scope="col">Deceased</th>
+        <th scope="col">Recovered</th>
+        <th scope="col">Tested</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>{{selectedStateData.total.confirmed}}</th>
+        <td>{{selectedStateData.total.deceased}}</td>
+        <td>{{selectedStateData.total.recovered}}</td>
+        <td>{{selectedStateData.total.tested}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <p>Last Updated: {{selectedStateData.meta.tested.last_updated}}</p>
